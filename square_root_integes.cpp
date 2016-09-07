@@ -42,6 +42,15 @@ int binary(int l,int r,int k)
         }
     }
 return -1;
+}
+main()
+{
+int num;
+cin>>num;
+int res=binary(0,num/2,num);
+cout<<res;
+}
+
 /* Sir Method
 int binSqrt(int A, int low, int high) {
      if(low >= high) {
@@ -58,12 +67,9 @@ int binSqrt(int A, int low, int high) {
      if(squareMid < (long)A)  return binSqrt(A, mid+1, high);
      else return binSqrt(A, low, mid-1);
  }
+ int floorSqrt(int num) {
+    return binSqrt(num, 0, num);
+}
 */
-}
-main()
-{
-int num;
-cin>>num;
-int res=binary(0,num/2,num);
-cout<<res;
-}
+
+
